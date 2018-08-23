@@ -47,7 +47,7 @@ export default Object.freeze(function fulfill(
             try {
 
 // Use the path to obtain a single replacement from the container of values.
-// The path contains wun or more names (or numbers) separated by periods.
+// The path contains one or more names (or numbers) separated by periods.
 
                 let replacement = (
                     typeof container === "function"
@@ -66,7 +66,7 @@ export default Object.freeze(function fulfill(
                     replacement = replacement(path, encoding);
                 }
 
-// If an encoder object was provided, call wun of its functions.
+// If an encoder object was provided, call one of its functions.
 // Otherwise, call the encoder function.
 
                 replacement = (
